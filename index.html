@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Spotify Clone</title>
+    <style>
+      #himage img {
+        width: 200px;
+        height: 200px;
+      }
+
+      #himage {
+        margin-top: 50px;
+      }
+
+      .img-content {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body onload="onPageLoad()">
+    <div class="container bg-dark">
+      <div class="row" id="tokenSection">
+        <div class="col-10 offet-1">
+          <input
+            class="btn btn-primary mt-4 mb-4"
+            type="button"
+            onclick="requestAuthorization()"
+            value="Request Authorization"
+            id="authid"
+          /><br />
+
+          <!-- Playlist heading -->
+          <div id="playlist-heading">
+            <div class="icon1 float-left clearfix">
+              <i class="fab fa-spotify fa-2x text-white"
+                ><h3 class="d-inline ml-3">Spotify</h3></i
+              >
+            </div>
+            <div class="input-group w-25 float-right clearfix">
+              <select
+                class="custom-select"
+                id="headingPlay"
+                aria-label="Example select with button addon"
+              >
+                <option selected>Choose Playlist</option>
+              </select>
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary text-light"
+                  type="button"
+                  id="search"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+            <br />
+            <div id="himage" class="clearfix"></div>
+          </div>
+
+          <!-- Playlist details -->
+          <div id="playlist-details" class="mt-5">
+            <table class="table table-borderless text-light">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>TITLE</th>
+                  <th><i class="far fa-clock fa-2x"></i></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<button type="button"></button>
