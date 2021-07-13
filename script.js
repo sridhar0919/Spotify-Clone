@@ -1,5 +1,5 @@
 
-let redirect_uri = "https://raw.githubusercontent.com/sridhar0919/Spotify-Clone/main/index.html";
+let redirect_uri = "https://sridhar0919.github.io/Spotify-Clone/";
 
 var clientId = '79d4babdce94446c975a195510b48ada';
 var clientSecret = '6e4b0b5e68594b1dab96994c319f7228';
